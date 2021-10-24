@@ -1,6 +1,7 @@
 import './App.css';
 import Books from './Books';
 import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client'
+import AddBook from './AddBook';
 
 const client = new ApolloClient({
   uri: 'http://localhost:4000',
@@ -13,6 +14,7 @@ function App() {
       <div className="App">
         <div className="App-header">
           <h2>CRM</h2>
+          <AddBook />
           <Books />
         </div>
       </div>
